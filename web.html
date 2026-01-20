@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Idiomas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traductor de Idiomas</h1>
+    <textarea id="texto-traducir" placeholder="Introduce un texto para traducir"></textarea>
+    <br><br>
+    <button onclick="traducirTexto()">Traducir</button>
+    <div id="resultado-traduccion"></div>
+
+    <script>
+        function traducirTexto() {
+            const texto = document.getElementById('texto-traducir').value;
+            // Aquí iría la lógica para traducir el texto (con tu bot de Botpress)
+            document.getElementById('resultado-traduccion').innerText = 'Traducción: ' + texto; // Ejemplo básico
+        }
+    </script>
+</body>
+</html>
